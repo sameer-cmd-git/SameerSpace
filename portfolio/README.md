@@ -1,6 +1,6 @@
 # Sameer Kulkarni — Portfolio
 
-A Vite + React portfolio site.
+A Vite + React portfolio site built for GitHub Pages.
 
 ## Run locally
 
@@ -19,10 +19,24 @@ npm run build
 
 Outputs to `dist/`. Preview the production build with `npm run preview`.
 
-## Deploy
+## Deploy to GitHub Pages
 
-Works out of the box on Vercel or Netlify — just connect the repo,
-both platforms auto-detect Vite and build correctly with no extra config.
+This project is configured for GitHub Pages using a repository-based URL.
+
+### Setup
+
+1. Make sure the repository name matches the base path in `vite.config.js`.
+2. Enable GitHub Pages in the repository settings.
+3. Choose the `GitHub Actions` deployment source.
+4. Push to the main branch.
+
+The deployment workflow is defined in `.github/workflows/deploy.yml` and will build the app from the `portfolio` folder and publish it automatically.
+
+Your site will be available at:
+
+```text
+https://sameer-cmd-git.github.io/SameerSpace/
+```
 
 ## Editing your content
 
